@@ -4,6 +4,11 @@
         <title>My Webpage today</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <style>
+            @media print {
+              .screens-only {
+                display: none;
+              }
+            }
             input[type = text] {
               background-color: #C9AE8F;
             }
@@ -36,25 +41,31 @@
     </head>
     <body>
         <h1>Page4</h1>
+
         <a href="file:///C:/project0%20(1)/WebX/Firstpage.html/First_Page.html">Main Menu</a>
         <a href="file:///C:/project0%20(1)/WebX/Secondpage.html/Second_Page.html">Second</a>
         <a href="file:///C:/project0%20(1)/WebX/Fourthpage.html/Fourth_Page.html">Fourth</a>
         <a href="">click here!</a>
+
         <div>
             <input name="name" type="text" placeholder="Name">
-            <input name="password" type="password" placeholder="Dots..."
+            <input name="password" type="password" placeholder="Dots...">
         </div>
+
         <div>
              favorite color?
              <input name="color" type="radio" value="red"> Red
              <input name="color" type="radio" value="green"> Green
         </div>
+
         <div>
              <input name="country" list="countries" placeholder="country">
              <datalist id="countries">
                <option value="Murica">
         </div>
+
         <button href="file:///C:/project0%20(1)/WebX/Firstpage.html/First_Page.html">Main Menu</button>
+
         <ol>
           <li>Item one</li>
           <li>Item Two</li>
@@ -66,6 +77,9 @@
 
         <ul>
           <li>list</li>
-        </ul
+        </ul>
+
+        <p>this is a paragraph.</p>
+        <p class="screen-only">This paragraph wont appear when printed</p>
     </body>
 </html>
